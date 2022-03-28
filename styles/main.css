@@ -93,7 +93,7 @@ main {
 
 #button_1 {
      color: var(--orange);
-     transition: all 0.s ease-out;
+     transition: all 0.3s ease-out;
 }
 #button_1:hover {
      background-color: var(--orange);
