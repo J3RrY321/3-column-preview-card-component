@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-size: 1em;
+}
+
+:root {
+     --light-gray: hsl(0, 0%, 95%);
+     --white-transparent: hsla(0, 0%, 100%, 0.75);
+     --orange: hsl(31, 77%, 52%);
+     --dark-cyan: hsl(184, 100%, 22%);
+     --very-dark-cyan:hsl(179, 100%, 13%);
+
+
+}
+
+main {
+     background-color: var(--light-gray);
+     width: 100vw;
+     height: 100vh;
+
+}
+
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 1rem;
+}
+@media (min-width: 1440px) {
+     .container {
+         flex-direction: row;
+         width: 100%;
+         height: 100%;
+     }
+ }
+
+.card {
+     width: 19rem;
+     height: 29rem;
+     padding: 3rem 2.5rem 2.5rem 2.5rem;
+}
+
+#card_1 {
+     background-color: var(--orange);
+     border-top-left-radius: 0.5rem;
+     border-top-right-radius: 0.5rem;
+}
+@media (min-width: 1440px) {
+     #card_1 {
+          border-top-right-radius: initial;
+          border-bottom-left-radius: 0.5rem;
+     }
+}
+
+.heading {
+     font-family: 'Big Shoulders Display', cursive;
+     font-weight: 700;
+     font-size: 2.5rem;
+     color: var(--light-gray);
+     padding: 1.8rem 0 1rem 0;
+     text-transform: uppercase;
+     letter-spacing: 0.1rem;
+}
+
+.card__paragraph {
+     font-family: 'Lexend Deca', sans-serif;
+     font-weight: 400;
+     color: var(--white-transparent);
+     font-size: 0.8rem;
+     line-height: 1.4rem;
+     letter-spacing: 1px;
+     padding: 1.25rem 0 2.25rem 0;
+}
+
+.button {
+     display: block;
+     padding: 1rem 1.5rem 1rem 1.5rem;
+     background-color: var(--light-gray);
+     text-decoration: none;
+     width: 9rem;
+     border-radius: 9999rem;
+     text-align: center;
+     font-family: 'Lexend Deca', sans-serif;
+     font-size: 0.9rem;
+     letter-spacing: 0.5px;
+}
+
+#button_1 {
+     color: var(--orange);
+     transition: all 0.2s ease-out;
+}
+#button_1:hover {
+     background-color: var(--orange);
+     color: var(--light-gray);
+     border: 2px solid var(--light-gray);
+}
+
+#card_2 {
+     background-color: var(--dark-cyan);
+}
+
+#button_2 {
+     color: var(--dark-cyan);
+     transition: all 0.2s ease-out;
+}
+#button_2:hover {
+     background-color: var(--dark-cyan);
+     color: var(--light-gray);
+     border: 2px solid var(--light-gray);
+}
+
+#card_3 {
+     background-color: var(--very-dark-cyan);
+     border-bottom-left-radius: 0.5rem;
+     border-bottom-right-radius: 0.5rem;
+}
+@media (min-width: 1440px) {
+     #card_3 {
+          border-bottom-left-radius: initial;
+          border-top-right-radius: 0.5rem;
+     }
+}
+
+#button_3 {
+     color: var(--very-dark-cyan);
+     transition: all 0.2s ease-out;
+}
+#button_3:hover {
+     background-color: var(--very-dark-cyan);
+     color: var(--light-gray);
+     border: 2px solid var(--light-gray);
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center;
+     background-color: var(--light-gray); 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
